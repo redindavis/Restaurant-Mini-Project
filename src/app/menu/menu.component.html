@@ -1,0 +1,26 @@
+<div class="container py-5">
+    <h1 class="text-center fw-bold">OUR MENU</h1>
+    <div class="container d-flex justify-content-center py-3">
+        
+           <button class="btn  me-3" (click)="filterItems('all')">ALL ITEMS</button>
+           <button class="btn  me-3" (click)="filterItems('breakfast')">BREAK FAST</button>
+           <button class="btn  me-3" (click)="filterItems('lunch')">LUNCH</button>
+           <button class="btn  me-3" (click)="filterItems('dinner')">DINNER</button>
+        </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let menuItem of filteredItems">
+        <div class="card">
+            <img width="60" height="300" [src]="menuItem.image" class="card-img-top" alt="Menu Item">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+              <h5 class="card-title">{{ menuItem.name }}</h5>
+              <p class="card-text">Price: {{ menuItem.price }}</p>
+              <a routerLink="/menudetail"><button class="btn btn-primary">View</button></a>
+            </div>
+    </div>
+  </div>
+</div>
+
+  

@@ -1,0 +1,10 @@
+h1{
+    color: rgb(227, 110, 21);
+}
+
+.btn{
+    background-color:rgb(227, 110, 21) ;
+    border: none;
+    color: white;
+    border-radius: 50px;
+}

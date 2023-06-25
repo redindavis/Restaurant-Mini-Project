@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12 " >
+          <div class="card">
+              <img width="60" height="300" [src]="menuItem.image" class="card-img-top" alt="Menu Item Details">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title">{{ menuItem.name }}</h5>
+                <p class="card-text">Price: {{ menuItem.price}}</p>
+                <a routerLink="/menu"><button class="btn btn-primary">close</button></a>
+              </div>
+      </div>
+    </div>
+  </div>
