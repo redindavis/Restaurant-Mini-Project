@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'menu', component: MenuComponent },
-  { path: 'menudetail', component: MenuItemDetailsComponent },
+  { path: 'menu/:id', component: MenuItemDetailsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

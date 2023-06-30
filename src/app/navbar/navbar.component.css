@@ -7,3 +7,12 @@
     color: #F27806;
 }
 
+
+.navbar-nav .nav-link.active {
+    color: orange;
+  }
+  
+  .navbar-nav .nav-link:not(.active) {
+    color: white;
+  }
+  
